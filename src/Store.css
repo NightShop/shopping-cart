@@ -1,0 +1,30 @@
+.cartBadgeContainer {
+    height:40px;
+    overflow: hidden;
+}
+
+.cartBadge {
+
+    margin-right: 20px;
+    margin-left: auto;
+    width: 80px;
+    height: 40px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #282c34;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    transition: 1s;
+}
+
+.cartBadge.active {
+    color: green;
+    bottom: 0px;
+    transition: 1s;
+}
+
+
