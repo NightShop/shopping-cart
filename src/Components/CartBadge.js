@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 const CartBadge = (props) => {
     const [active, setActive] = useState("");
     useEffect(() => {
-        setActive("active");
+        setActive(props.showBadge);
         return () => {
             setActive("");
         }
-    }, [])
+    }, [props.showBadge]);
+
 
     return (
         <div className="cartBadgeContainer">

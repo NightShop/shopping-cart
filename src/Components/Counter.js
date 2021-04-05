@@ -1,23 +1,18 @@
-import { useEffect, useState } from "react";
 import { FaPlusCircle, FaMinusCircle } from "react-icons/fa";
 
 const Counter = (props) => {
-    const [count, setCounter] = useState(0);
-    const handleCount = props.handleCount;
-    useEffect(() => {
-        handleCount(count);
-    }, [count]);
+    
     return (
         <div className="counter">
-            <div onClick={() => setCounter((prevState) => prevState - 1)}>
+            <div onClick={props.decrement}>
                 <FaMinusCircle />
             </div>
             <input onChange={e => {
                 if (e.target.value >= 0) {
-                    setCounter(e.target.value);
+                    props.handleCount(e.target.value);
                 }
-            }} value={count} />
-            <div onClick={() => setCounter((prevState) => prevState + 1)}>
+            }} value={props.count} />
+            <div onClick={props.increment}>
                 <FaPlusCircle />
             </div>
         </div>

@@ -1,0 +1,69 @@
+.cartPanel {
+    box-sizing: border-box;
+    position: fixed;
+    right: -600px;
+    top: 20%;
+    width: 600px;
+    border: 1px solid grey;
+    background-color: lightgray;
+    transition: 1s;
+
+}
+
+.cartPanel.active {
+    right: 0;
+}
+
+td {
+
+    padding: 0 10px 5px 0;
+}
+
+table {
+    margin: 50px;
+}
+
+.toggleCartPanel {
+    box-sizing: border-box;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    height: 100px;
+    width: 20px;
+    background-color: inherit;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid grey;
+    border-right: 0;
+}
+
+.cartCaret {
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.cartTable {
+    width: 80%;
+}
+
+thead tr th {
+    padding-bottom: 20px;
+    border-bottom: 1px solid darkgrey;
+}
+
+tbody tr td {
+    height: 40px;
+}
+
+.checkoutButton {
+    margin: 20px;
+}
+
+.itemsContainer {
+    width: 1000px;
+    margin: 0 auto;
+}
